@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/*
+  What's a Payment — brand guide v1, November 2026.
+
+  Colour ratio the guide sets: White 33% · Navy 30% · Amber 15% · Warm Gray
+  10% · Black and Red the remainder. Red is ACCENT ONLY — badges like "Just
+  listed" or "Rates dropped", never a large area.
+
+  Contrast rules from the guide, which the component classes below obey:
+    ✓ White text on Deep Navy, Black or Red
+    ✓ Deep Navy text on Deep Amber, White or Warm Gray
+    ✗ White text on Deep Amber — unreadable, never do it
+*/
+
+:root {
+  --navy: #1f3a5f;
+  --navy-700: #162c48;
+  --navy-300: #5b7395;
+  --amber: #e89b0c;
+  --amber-600: #c8820a;
+  --white: #ffffff;
+  --black: #141414;
+  --warm: #edeae4;
+  --warm-deep: #ded9cf;
+  --red: #c8102e;
+
+  /* Text tones derived from the palette rather than invented greys. */
+  --ink: #141414;
+  --muted: #5a6577;
+  --muted-on-navy: #b9c6d8;
+
+  --background: #ffffff;
+  --foreground: #141414;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-700: var(--navy-700);
+  --color-amber: var(--amber);
+  --color-amber-600: var(--amber-600);
+  --color-warm: var(--warm);
+  --color-warm-deep: var(--warm-deep);
+  --color-red: var(--red);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-muted-navy: var(--muted-on-navy);
+  --font-display: var(--font-sora);
+  --font-sans: var(--font-dm-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-dm-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+.display {
+  font-family: var(--font-sora), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/*
+  Small labels in all caps with wide spacing — the guide's rule for eyebrows
+  and tags.
+*/
+.eyebrow {
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* A payment figure. Sora ExtraBold, tabular so columns line up. */
+.figure {
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+}
+
+/*
+  The amber highlight behind a word, as used on the brand guide's type page
+  ("What would it cost to [own?]"). Navy text on amber — never the reverse.
+*/
+.highlight {
+  background: var(--amber);
+  color: var(--navy);
+  padding: 0.04em 0.22em;
+  border-radius: 0.18em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
