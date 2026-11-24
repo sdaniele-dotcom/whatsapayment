@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/fetch-instagram.mjs && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "fetch:instagram": "node scripts/fetch-instagram.mjs"
   },
   "dependencies": {
     "next": "16.3.0",

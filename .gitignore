@@ -5,3 +5,8 @@ out/
 next-env.d.ts
 .env*.local
 .DS_Store
+
+# Instagram images are downloaded at build time, never committed.
+# instagram.json IS committed (empty) so a clean checkout type-checks;
+# the build overwrites it.
+public/ig/

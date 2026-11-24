@@ -4,6 +4,11 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  # The Instagram feed is baked in at build time, so the site has to rebuild
+  # to pick up new posts. 11:17 UTC is early morning Pacific, and off the hour
+  # because GitHub's scheduler is busiest exactly on it.
+  schedule:
+    - cron: "17 11 * * *"
 
 permissions:
   contents: read
@@ -28,12 +33,17 @@ jobs:
       # path prefix. If you ever serve this from the github.io/<repo> URL
       # instead, set BASE_PATH to /<repo> here.
       #
-      # There are no secrets to pass: the site is static marketing pages and
-      # a calculator that runs entirely in the browser. It talks to no
-      # database and holds no keys.
+      #
+      # The two Instagram values are the only secrets here, and they are read
+      # by scripts/fetch-instagram.mjs on the runner — never shipped to the
+      # browser. With neither set the script writes an empty feed and the
+      # social page renders without its grid, so the site still deploys. A
+      # lapsed token must not be able to take the website down with it.
       - run: npm run build
         env:
           BASE_PATH: ""
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

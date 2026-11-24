@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Sora, DM_Sans } from "next/font/google";
 import "./globals.css";
-import { Nav } from "@/components/Nav";
-import { Footer } from "@/components/Footer";
 import { site } from "@/lib/site";
 
 /*
@@ -39,15 +37,21 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * The root layout carries the document and the fonts and nothing else.
+ *
+ * The site's header and footer live in the `(site)` route group instead, so a
+ * page can opt out of them. `/go` does: it is the link in the Instagram bio,
+ * where a nav bar is five ways to leave before reading anything. Route groups
+ * do not appear in URLs, so every path is unchanged.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={`${sora.variable} ${dmSans.variable} antialiased`}>
-        <Nav />
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

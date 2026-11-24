@@ -9,6 +9,7 @@ const LINKS = [
   { href: "/loan-options/", label: "Loan options" },
   { href: "/payment-calculator/", label: "Payment calculator" },
   { href: "/how-it-works/", label: "How it works" },
+  { href: "/social/", label: "Social" },
   { href: "/about/", label: "About" },
   { href: "/contact/", label: "Contact" },
 ];

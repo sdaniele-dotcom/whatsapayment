@@ -41,6 +41,7 @@ export function Footer() {
               <li><Link href="/loan-options/" className="hover:text-white">Loan options</Link></li>
               <li><Link href="/payment-calculator/" className="hover:text-white">Payment calculator</Link></li>
               <li><Link href="/how-it-works/" className="hover:text-white">How it works</Link></li>
+              <li><Link href="/social/" className="hover:text-white">Social</Link></li>
               <li><Link href="/about/" className="hover:text-white">About</Link></li>
               <li><Link href="/contact/" className="hover:text-white">Contact</Link></li>
             </ul>
