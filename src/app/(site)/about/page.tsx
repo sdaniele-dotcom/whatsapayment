@@ -25,7 +25,7 @@ export default function About() {
         <p>
           Not &ldquo;what&rsquo;s my rate.&rdquo; Not &ldquo;how much can I
           qualify for.&rdquo; People want to know what it costs every month to
-          live there — so that is the question we answer first, and plainly.
+          live there. So that is the question we answer first, and plainly.
         </p>
       </Hero>
 
@@ -62,8 +62,7 @@ export default function About() {
             You will be talking to one of these four.
           </h2>
           <p className="mt-4 max-w-2xl text-[17px] leading-relaxed text-muted">
-            Not a call centre, not a chatbot, and not a different person every
-            time you ring.
+            The same person each time you call, and they pick up.
           </p>
 
           <div className="mt-10 grid gap-5 sm:grid-cols-2">

@@ -78,7 +78,7 @@ export default function Social() {
         <p>
           The fastest way to see what we do is to watch us do it. We price
           houses that are on the market right now and show the whole monthly
-          number — not a rate, not a range.
+          number.
         </p>
       </Hero>
 

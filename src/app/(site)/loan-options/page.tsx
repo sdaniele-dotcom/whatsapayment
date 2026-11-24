@@ -55,8 +55,7 @@ export default function LoanOptions() {
         <div className="mx-auto max-w-6xl px-5 py-16 lg:py-20">
           <p className="eyebrow text-amber-600">When the answer was no</p>
           <h2 className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
-            Turned down somewhere else? That is usually the start of the
-            conversation, not the end of it.
+            Turned down somewhere else? It is worth asking again.
           </h2>
           <p className="mt-5 max-w-2xl text-[17px] leading-relaxed text-muted">
             These are the programs people only find out about because they

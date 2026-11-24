@@ -34,8 +34,8 @@ export default function CalculatorPage() {
               <p className="mt-3 text-[16px] leading-relaxed text-muted">
                 Principal and interest, property taxes, home insurance, HOA
                 dues, and mortgage insurance when the down payment is under
-                20%. That is the whole monthly number, not just the part
-                lenders like to quote.
+                20%. That is the whole monthly number. Most quotes show you
+                a slice of it.
               </p>
             </div>
             <div>

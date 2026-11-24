@@ -28,7 +28,7 @@ export default function Contact() {
             <div className="rounded-2xl bg-navy p-7 text-white">
               <p className="eyebrow text-amber">Rather just talk?</p>
               <p className="mt-3 text-[17px] leading-relaxed text-muted-navy">
-                Call or text — a loan officer picks up, not a queue.
+                Call or text. A loan officer picks up.
               </p>
               <a
                 href={`tel:${site.phoneHref}`}

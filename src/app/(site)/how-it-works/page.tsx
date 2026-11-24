@@ -89,8 +89,8 @@ export default function HowItWorks() {
             The paperwork, up front, so it isn&rsquo;t a surprise.
           </h2>
           <p className="mt-5 text-[17px] leading-relaxed text-muted">
-            Not at the first conversation — none of this is needed to find out
-            what a payment would be. This is what a pre-approval takes.
+            None of this is needed to find out what a payment would be. This is
+            what a pre-approval takes.
           </p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {DOCS.map((d) => (

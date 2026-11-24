@@ -54,7 +54,7 @@ export default function Home() {
             What would it cost to <span className="highlight">own?</span>
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted-navy sm:text-xl">
-            Tell us the house. We&rsquo;ll tell you the payment — with the rate,
+            Tell us the house. We&rsquo;ll tell you the payment, with the rate,
             the APR and the assumptions right next to it. No jargon, no
             pressure, and no credit pull to get started.
           </p>
@@ -87,7 +87,7 @@ export default function Home() {
             <div>
               <p className="eyebrow text-amber-600">What you actually get</p>
               <h2 className="mt-4 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
-                A number you can act on, not a range you can&rsquo;t.
+                A number you can act on.
               </h2>
               <p className="mt-5 text-[17px] leading-relaxed text-muted">
                 Most lenders answer &ldquo;it depends.&rdquo; We answer with the

@@ -16,7 +16,7 @@ export function Footer() {
             <Wordmark tone="white" height={28} className="h-[26px] w-auto" />
             <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-muted-navy">
               {site.tagline} Tell us the house and we&rsquo;ll tell you the
-              payment — with the rate, the APR and the assumptions right next
+              payment, with the rate, the APR and the assumptions right next
               to it.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
