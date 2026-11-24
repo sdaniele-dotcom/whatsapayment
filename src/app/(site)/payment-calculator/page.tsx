@@ -59,7 +59,7 @@ export default function CalculatorPage() {
               </p>
             </div>
           </div>
-          <p className="mt-10 border-t border-warm-deep pt-6 text-[13px] leading-relaxed text-muted">
+          <p className="mt-10 border-t border-warm-deep pt-6 text-[14px] leading-relaxed text-muted">
             {ESTIMATE_DISCLOSURE}
           </p>
         </div>

@@ -32,17 +32,17 @@ export default function LoanOptions() {
                 <h2 className="font-display text-2xl font-extrabold text-navy">
                   {p.name}
                 </h2>
-                <span className="rounded-full bg-warm px-3 py-1 text-[12.5px] font-bold text-navy">
+                <span className="rounded-full bg-warm px-3 py-1 text-[12px] font-bold text-navy">
                   {p.down}
                 </span>
               </div>
-              <p className="mt-2.5 font-display text-[17px] font-semibold text-amber-600">
+              <p className="mt-2.5 font-display text-[18px] font-semibold text-amber-600">
                 {p.hook}
               </p>
               <p className="mt-4 text-[16px] leading-relaxed text-muted">
                 {p.forYou}
               </p>
-              <p className="mt-4 border-t border-warm pt-4 text-[15px] leading-relaxed text-muted">
+              <p className="mt-4 border-t border-warm pt-4 text-[16px] leading-relaxed text-muted">
                 <span className="font-semibold text-navy">The trade-off: </span>
                 {p.tradeoff}
               </p>
@@ -57,7 +57,7 @@ export default function LoanOptions() {
           <h2 className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
             Turned down somewhere else? It is worth asking again.
           </h2>
-          <p className="mt-5 max-w-2xl text-[17px] leading-relaxed text-muted">
+          <p className="mt-5 max-w-2xl text-[18px] leading-relaxed text-muted">
             These are the programs people only find out about because they
             asked. If a lender has already told you no, it is worth one more
             call before you give up on the house.
@@ -69,7 +69,7 @@ export default function LoanOptions() {
                 <h3 className="font-display text-[18px] font-bold text-navy">
                   {h.name}
                 </h3>
-                <p className="mt-2 text-[15.5px] leading-relaxed text-muted">
+                <p className="mt-2 text-[16px] leading-relaxed text-muted">
                   {h.line}
                 </p>
               </div>
@@ -83,7 +83,7 @@ export default function LoanOptions() {
           <h2 className="mx-auto max-w-2xl text-3xl font-extrabold leading-tight sm:text-4xl">
             Not sure which one you&rsquo;re in?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-[17px] leading-relaxed text-muted-navy">
+          <p className="mx-auto mt-4 max-w-xl text-[18px] leading-relaxed text-muted-navy">
             That&rsquo;s the normal starting point. Tell us the house and
             we&rsquo;ll price every option you qualify for, side by side.
           </p>

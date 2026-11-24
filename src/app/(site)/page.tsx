@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LogoIcon } from "@/components/Logo";
+import { PaymentExample } from "@/components/PaymentExample";
 import { site } from "@/lib/site";
 
 /*
@@ -48,48 +49,65 @@ export default function Home() {
           tone="white"
           className="pointer-events-none absolute -right-10 top-4 h-[420px] w-auto opacity-[0.07] sm:right-6 lg:h-[560px]"
         />
-        <div className="relative mx-auto max-w-6xl px-5 py-20 lg:py-28">
-          <p className="eyebrow text-amber">Home loans, explained simply</p>
-          <h1 className="mt-5 max-w-3xl text-[2.6rem] font-extrabold leading-[1.05] sm:text-6xl lg:text-7xl">
-            What would it cost to <span className="highlight">own?</span>
-          </h1>
-          <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted-navy sm:text-xl">
-            Tell us the house. We&rsquo;ll tell you the payment, with the rate,
-            the APR and the assumptions right next to it. No jargon, no
-            pressure, and no credit pull to get started.
-          </p>
+        {/*
+          Asymmetric split, text left and the answer right.
 
-          <div className="mt-9 flex flex-wrap gap-3">
-            <Link
-              href="/payment-calculator/"
-              className="rounded-full bg-amber px-7 py-3.5 text-[16px] font-semibold text-navy transition-opacity hover:opacity-90"
-            >
-              See your payment
-            </Link>
-            <a
-              href={site.bookingUrl}
-              className="rounded-full border border-white/35 px-7 py-3.5 text-[16px] font-semibold text-white transition-colors hover:bg-white/10"
-            >
-              Talk to a loan officer
-            </a>
+          The hero used to be type on an empty navy field, which reads as
+          competent and could belong to any lender. The page promises a
+          payment, so the hero now shows one: the same worked example that
+          used to sit in the section below, moved up to where it proves the
+          headline instead of restating it two screens later.
+
+          It is the one bright element on the page. Everything around it is
+          navy and quiet, which is what makes a white card carrying a single
+          large figure read in one glance.
+        */}
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-28">
+          <div>
+            <p className="eyebrow text-amber">Home loans, explained simply</p>
+            <h1 className="mt-5 text-[2.6rem] font-extrabold leading-[1.05] sm:text-6xl lg:text-[4.1rem]">
+              What would it cost to <span className="highlight">own?</span>
+            </h1>
+            <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted-navy sm:text-xl">
+              Tell us the house. We&rsquo;ll tell you the payment, with the
+              rate, the APR and the assumptions right next to it. No jargon, no
+              pressure, and no credit pull to get started.
+            </p>
+
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Link
+                href="/payment-calculator/"
+                className="rounded-full bg-amber px-7 py-3.5 text-[16px] font-semibold text-navy transition-opacity hover:opacity-90"
+              >
+                See your payment
+              </Link>
+              <a
+                href={site.bookingUrl}
+                className="rounded-full border border-white/35 px-7 py-3.5 text-[16px] font-semibold text-white transition-colors hover:bg-white/10"
+              >
+                Talk to a loan officer
+              </a>
+            </div>
+
+            <p className="mt-7 text-[14px] text-muted-navy/80">
+              Licensed in California · {site.licensee} · NMLS #{site.companyNmls}
+            </p>
           </div>
 
-          <p className="mt-7 text-[14px] text-muted-navy/80">
-            Licensed in California · {site.licensee} · NMLS #{site.companyNmls}
-          </p>
+          <PaymentExample />
         </div>
       </section>
 
       {/* ── A worked example ─────────────────────────────────────── */}
       <section className="bg-warm">
         <div className="mx-auto max-w-6xl px-5 py-16 lg:py-20">
-          <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_1fr]">
+          <div className="max-w-3xl">
             <div>
               <p className="eyebrow text-amber-600">What you actually get</p>
               <h2 className="mt-4 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
                 A number you can act on.
               </h2>
-              <p className="mt-5 text-[17px] leading-relaxed text-muted">
+              <p className="mt-5 text-[18px] leading-relaxed text-muted">
                 Most lenders answer &ldquo;it depends.&rdquo; We answer with the
                 monthly figure, what sits inside it, and the rate and APR it
                 came from — so you can compare it with anything else on your
@@ -112,44 +130,6 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* An example card, labelled as one. */}
-            <div className="rounded-2xl bg-white p-7 shadow-[0_12px_40px_rgba(31,58,95,0.10)] sm:p-8">
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="eyebrow text-muted">Example · 30-year fixed</p>
-                  <p className="mt-1 font-display text-[19px] font-bold text-navy">
-                    $650,000 · 5% down
-                  </p>
-                </div>
-                <span className="rounded-full bg-navy px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
-                  Sample
-                </span>
-              </div>
-
-              <p className="figure mt-6 text-5xl text-navy sm:text-6xl">$4,812</p>
-              <p className="mt-1 text-[15px] text-muted">per month, all in</p>
-
-              <dl className="mt-7 flex flex-col gap-2.5 border-t border-warm pt-5 text-[15px]">
-                {[
-                  ["Principal & interest", "$3,944"],
-                  ["Taxes & insurance", "$702"],
-                  ["Mortgage insurance", "$166"],
-                  ["Rate / APR", "6.875% / 7.042%"],
-                ].map(([k, v]) => (
-                  <div key={k} className="flex justify-between gap-4">
-                    <dt className="text-muted">{k}</dt>
-                    <dd className="font-semibold tabular-nums text-ink">{v}</dd>
-                  </div>
-                ))}
-              </dl>
-
-              <p className="mt-6 text-[12.5px] leading-relaxed text-muted">
-                Illustration only, not a quote. Assumes 760 FICO, owner-occupied
-                single family, 30-day lock. Your rate, APR and payment depend on
-                credit, income, assets, property and program. Not a commitment
-                to lend.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -184,7 +164,7 @@ export default function Home() {
             </div>
             <Link
               href="/loan-options/"
-              className="rounded-full border-2 border-navy px-6 py-3 text-[15px] font-semibold text-navy transition-colors hover:bg-navy hover:text-white"
+              className="rounded-full border-2 border-navy px-6 py-3 text-[16px] font-semibold text-navy transition-colors hover:bg-navy hover:text-white"
             >
               See all options
             </Link>
@@ -193,8 +173,8 @@ export default function Home() {
           <div className="mt-11 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {OPTIONS.map((o) => (
               <div key={o.name} className="rounded-2xl bg-white p-6">
-                <h3 className="font-display text-[19px] font-bold text-navy">{o.name}</h3>
-                <p className="mt-2 text-[15.5px] leading-relaxed text-muted">{o.line}</p>
+                <h3 className="font-display text-[20px] font-bold text-navy">{o.name}</h3>
+                <p className="mt-2 text-[16px] leading-relaxed text-muted">{o.line}</p>
               </div>
             ))}
           </div>
@@ -207,7 +187,7 @@ export default function Home() {
           <h2 className="mx-auto max-w-2xl text-3xl font-extrabold leading-tight sm:text-4xl">
             So — what&rsquo;s a payment on the place you&rsquo;re looking at?
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-muted-navy">
+          <p className="mx-auto mt-5 max-w-xl text-[18px] leading-relaxed text-muted-navy">
             Run it yourself in about a minute, or send us the address and
             we&rsquo;ll price it properly and send the options back.
           </p>

@@ -72,7 +72,7 @@ export default function HowItWorks() {
                 <h2 className="font-display text-xl font-bold text-navy sm:text-2xl">
                   {s.title}
                 </h2>
-                <span className="ml-auto rounded-full bg-warm px-3 py-1 text-[12.5px] font-bold text-navy">
+                <span className="ml-auto rounded-full bg-warm px-3 py-1 text-[12px] font-bold text-navy">
                   {s.when}
                 </span>
               </div>
@@ -88,13 +88,13 @@ export default function HowItWorks() {
           <h2 className="mt-4 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
             The paperwork, up front, so it isn&rsquo;t a surprise.
           </h2>
-          <p className="mt-5 text-[17px] leading-relaxed text-muted">
+          <p className="mt-5 text-[18px] leading-relaxed text-muted">
             None of this is needed to find out what a payment would be. This is
             what a pre-approval takes.
           </p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {DOCS.map((d) => (
-              <li key={d} className="flex gap-3 rounded-xl bg-white p-4 text-[15.5px] text-ink/85">
+              <li key={d} className="flex gap-3 rounded-xl bg-white p-4 text-[16px] text-ink/85">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="mt-0.5 shrink-0" aria-hidden>
                   <circle cx="12" cy="12" r="11" fill="#1f3a5f" />
                   <path d="M7.5 12.4l3 3 6-6.4" stroke="#e89b0c" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />

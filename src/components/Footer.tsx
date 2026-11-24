@@ -14,7 +14,7 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <Wordmark tone="white" height={28} className="h-[26px] w-auto" />
-            <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-muted-navy">
+            <p className="mt-4 max-w-sm text-[16px] leading-relaxed text-muted-navy">
               {site.tagline} Tell us the house and we&rsquo;ll tell you the
               payment, with the rate, the APR and the assumptions right next
               to it.
@@ -22,13 +22,13 @@ export function Footer() {
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href={site.applyUrl}
-                className="rounded-full bg-amber px-5 py-2.5 text-[15px] font-semibold text-navy transition-opacity hover:opacity-90"
+                className="rounded-full bg-amber px-5 py-2.5 text-[16px] font-semibold text-navy transition-opacity hover:opacity-90"
               >
                 Get started
               </a>
               <a
                 href={site.bookingUrl}
-                className="rounded-full border border-white/35 px-5 py-2.5 text-[15px] font-semibold text-white transition-colors hover:bg-white/10"
+                className="rounded-full border border-white/35 px-5 py-2.5 text-[16px] font-semibold text-white transition-colors hover:bg-white/10"
               >
                 Book a call
               </a>
@@ -37,7 +37,7 @@ export function Footer() {
 
           <div>
             <p className="eyebrow text-amber">Explore</p>
-            <ul className="mt-4 flex flex-col gap-2.5 text-[15px] text-muted-navy">
+            <ul className="mt-4 flex flex-col gap-2.5 text-[16px] text-muted-navy">
               <li><Link href="/loan-options/" className="hover:text-white">Loan options</Link></li>
               <li><Link href="/payment-calculator/" className="hover:text-white">Payment calculator</Link></li>
               <li><Link href="/how-it-works/" className="hover:text-white">How it works</Link></li>
@@ -49,7 +49,7 @@ export function Footer() {
 
           <div>
             <p className="eyebrow text-amber">Talk to us</p>
-            <ul className="mt-4 flex flex-col gap-2.5 text-[15px] text-muted-navy">
+            <ul className="mt-4 flex flex-col gap-2.5 text-[16px] text-muted-navy">
               <li><a href={`tel:${site.phoneHref}`} className="hover:text-white">{site.phone}</a></li>
               <li><a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a></li>
               <li className="leading-relaxed">{site.address}</li>
@@ -66,11 +66,11 @@ export function Footer() {
           <p className="text-[14px] font-semibold text-white">
             {site.brand} is a registered trade name of {site.licensee}.
           </p>
-          <p className="mt-1.5 text-[13.5px] text-muted-navy">{LICENSEE_LINE}</p>
-          <p className="mt-3 max-w-4xl text-[12.5px] leading-relaxed text-muted-navy/85">
+          <p className="mt-1.5 text-[14px] text-muted-navy">{LICENSEE_LINE}</p>
+          <p className="mt-3 max-w-4xl text-[12px] leading-relaxed text-muted-navy/85">
             {ESTIMATE_DISCLOSURE}
           </p>
-          <p className="mt-4 text-[12.5px] text-muted-navy/70">
+          <p className="mt-4 text-[12px] text-muted-navy/70">
             © {new Date().getFullYear()} {site.licensee}. All rights reserved.
           </p>
         </div>

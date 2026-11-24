@@ -30,7 +30,7 @@ export default function About() {
       </Hero>
 
       <section className="mx-auto max-w-4xl px-5 py-16 lg:py-20">
-        <div className="flex flex-col gap-6 text-[17px] leading-relaxed text-muted">
+        <div className="flex flex-col gap-6 text-[18px] leading-relaxed text-muted">
           <p>
             Mortgage lending has a habit of answering simple questions with
             complicated ones. Ask what a house would cost you and you get a
@@ -61,7 +61,7 @@ export default function About() {
           <h2 className="mt-4 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
             You will be talking to one of these four.
           </h2>
-          <p className="mt-4 max-w-2xl text-[17px] leading-relaxed text-muted">
+          <p className="mt-4 max-w-2xl text-[18px] leading-relaxed text-muted">
             The same person each time you call, and they pick up.
           </p>
 
@@ -76,10 +76,10 @@ export default function About() {
                   className="h-20 w-20 shrink-0 rounded-full object-cover sm:h-24 sm:w-24"
                 />
                 <div className="min-w-0">
-                  <h3 className="font-display text-[19px] font-bold text-navy">{m.name}</h3>
+                  <h3 className="font-display text-[20px] font-bold text-navy">{m.name}</h3>
                   <p className="text-[14px] text-muted">Loan Officer · NMLS #{m.nmls}</p>
-                  <p className="mt-1.5 text-[15px] text-ink/80">{m.phone}</p>
-                  <a href={`mailto:${m.email}`} className="break-all text-[14.5px] text-navy underline decoration-amber underline-offset-4">
+                  <p className="mt-1.5 text-[16px] text-ink/80">{m.phone}</p>
+                  <a href={`mailto:${m.email}`} className="break-all text-[14px] text-navy underline decoration-amber underline-offset-4">
                     {m.email}
                   </a>
                 </div>
@@ -101,10 +101,10 @@ export default function About() {
             it, sit with {site.licensee} — which is why that name appears on
             every quote, flyer and disclosure we send.
           </p>
-          <p className="mt-5 border-t border-warm pt-5 text-[14.5px] font-semibold text-navy">
+          <p className="mt-5 border-t border-warm pt-5 text-[14px] font-semibold text-navy">
             {LICENSEE_LINE}
           </p>
-          <p className="mt-3 text-[15px] text-muted">{site.address}</p>
+          <p className="mt-3 text-[16px] text-muted">{site.address}</p>
         </div>
 
         <div className="mt-10 text-center">

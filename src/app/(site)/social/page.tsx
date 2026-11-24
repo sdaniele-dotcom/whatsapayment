@@ -117,14 +117,14 @@ export default function Social() {
               </svg>
               <span className="min-w-0">
                 <span
-                  className={`block font-display text-[19px] font-bold ${
+                  className={`block font-display text-[20px] font-bold ${
                     a.primary ? "text-white" : "text-navy"
                   }`}
                 >
                   {a.handle}
                 </span>
                 <span
-                  className={`mt-1 block text-[15px] leading-relaxed ${
+                  className={`mt-1 block text-[16px] leading-relaxed ${
                     a.primary ? "text-muted-navy" : "text-muted"
                   }`}
                 >
@@ -162,18 +162,18 @@ export default function Social() {
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                       />
                       {p.isVideo && (
-                        <span className="absolute right-3 top-3 rounded-full bg-navy/80 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white">
+                        <span className="absolute right-3 top-3 rounded-full bg-navy/80 px-2.5 py-1 text-[12px] font-bold uppercase tracking-wide text-white">
                           Reel
                         </span>
                       )}
                     </span>
                   )}
                   <span className="block p-5">
-                    <span className="block text-[15px] leading-relaxed text-ink/85">
+                    <span className="block text-[16px] leading-relaxed text-ink/85">
                       {firstLine(p.caption) || "View this post on Instagram"}
                     </span>
                     {p.timestamp && (
-                      <span className="mt-2.5 block text-[13px] text-muted">
+                      <span className="mt-2.5 block text-[14px] text-muted">
                         {new Date(p.timestamp).toLocaleDateString("en-US", {
                           month: "long",
                           day: "numeric",
@@ -186,7 +186,7 @@ export default function Social() {
               ))}
             </div>
 
-            <p className="mt-8 text-[13px] text-muted">
+            <p className="mt-8 text-[14px] text-muted">
               Posts are refreshed daily. Figures in them are estimates for
               education only — see the full disclosure below.
             </p>
@@ -203,8 +203,8 @@ export default function Social() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2">
           {WE_POST.map((w) => (
             <div key={w.title} className="rounded-2xl border border-warm-deep bg-white p-6 sm:p-7">
-              <h3 className="font-display text-[19px] font-bold text-navy">{w.title}</h3>
-              <p className="mt-2.5 text-[15.5px] leading-relaxed text-muted">{w.body}</p>
+              <h3 className="font-display text-[20px] font-bold text-navy">{w.title}</h3>
+              <p className="mt-2.5 text-[16px] leading-relaxed text-muted">{w.body}</p>
             </div>
           ))}
         </div>
@@ -246,7 +246,7 @@ export default function Social() {
           </div>
         </div>
 
-        <p className="mt-12 border-t border-warm-deep pt-6 text-[13px] leading-relaxed text-muted">
+        <p className="mt-12 border-t border-warm-deep pt-6 text-[14px] leading-relaxed text-muted">
           {LICENSEE_LINE}
         </p>
       </section>

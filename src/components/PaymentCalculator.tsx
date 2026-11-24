@@ -54,10 +54,10 @@ function Field({
     <label htmlFor={id} className="block">
       <span className="flex items-baseline justify-between gap-2">
         <span className="text-[14px] font-semibold text-navy">{label}</span>
-        {hint && <span className="text-[13px] text-muted">{hint}</span>}
+        {hint && <span className="text-[14px] text-muted">{hint}</span>}
       </span>
       <span className="mt-1.5 flex items-center rounded-xl border border-warm-deep bg-white focus-within:border-amber focus-within:ring-2 focus-within:ring-amber/30">
-        {prefix && <span className="pl-3 text-[15px] text-muted">{prefix}</span>}
+        {prefix && <span className="pl-3 text-[16px] text-muted">{prefix}</span>}
         <input
           id={id}
           type="number"
@@ -70,7 +70,7 @@ function Field({
           className="w-full bg-transparent px-3 py-2.5 text-[16px] font-medium text-ink outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none"
         />
         {suffix && (
-          <span className="whitespace-nowrap pr-3 text-[15px] text-muted">{suffix}</span>
+          <span className="whitespace-nowrap pr-3 text-[16px] text-muted">{suffix}</span>
         )}
       </span>
       {slider && max !== undefined && (
@@ -140,11 +140,11 @@ export function PaymentCalculator() {
         <p className="figure mt-3 text-[3.2rem] leading-none sm:text-6xl">
           {money(r.total)}
         </p>
-        <p className="mt-2 text-[15px] text-muted-navy">
+        <p className="mt-2 text-[16px] text-muted-navy">
           {money(r.loan)} loan · {downPct}% down · {years}-year fixed
         </p>
 
-        <dl className="mt-7 flex flex-col gap-3 border-t border-white/15 pt-6 text-[15.5px]">
+        <dl className="mt-7 flex flex-col gap-3 border-t border-white/15 pt-6 text-[16px]">
           {[
             ["Principal & interest", money(r.pi)],
             ["Property taxes", money(r.tax)],
@@ -159,12 +159,12 @@ export function PaymentCalculator() {
           ))}
           <div className="mt-1 flex justify-between gap-4 border-t border-white/15 pt-3">
             <dt className="font-bold">Total monthly</dt>
-            <dd className="figure text-[19px]">{money(r.total)}</dd>
+            <dd className="figure text-[20px]">{money(r.total)}</dd>
           </div>
         </dl>
 
         {/* The guide's rule, rendered: rate, date, assumptions, beside the figure. */}
-        <p className="mt-6 rounded-xl bg-white/10 p-4 text-[13px] leading-relaxed text-muted-navy">
+        <p className="mt-6 rounded-xl bg-white/10 p-4 text-[14px] leading-relaxed text-muted-navy">
           At <strong className="text-white">{rate}%</strong> on a {years}-year
           fixed, as entered on {asOf}. Assumes an owner-occupied purchase, taxes
           at {taxPct}% of the price per year, and mortgage insurance estimated
@@ -176,13 +176,13 @@ export function PaymentCalculator() {
         <div className="mt-6 flex flex-wrap gap-3">
           <a
             href={site.bookingUrl}
-            className="rounded-full bg-amber px-6 py-3 text-[15.5px] font-semibold text-navy transition-opacity hover:opacity-90"
+            className="rounded-full bg-amber px-6 py-3 text-[16px] font-semibold text-navy transition-opacity hover:opacity-90"
           >
             Get a real quote
           </a>
           <a
             href={`tel:${site.phoneHref}`}
-            className="rounded-full border border-white/35 px-6 py-3 text-[15.5px] font-semibold text-white transition-colors hover:bg-white/10"
+            className="rounded-full border border-white/35 px-6 py-3 text-[16px] font-semibold text-white transition-colors hover:bg-white/10"
           >
             {site.phone}
           </a>

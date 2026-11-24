@@ -29,7 +29,7 @@ export function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className="text-[15px] font-medium text-ink/80 transition-colors hover:text-navy"
+              className="text-[16px] font-medium text-ink/80 transition-colors hover:text-navy"
             >
               {l.label}
             </Link>
@@ -39,13 +39,13 @@ export function Nav() {
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href={`tel:${site.phoneHref}`}
-            className="text-[15px] font-semibold text-navy"
+            className="text-[16px] font-semibold text-navy"
           >
             {site.phone}
           </a>
           <a
             href={site.applyUrl}
-            className="rounded-full bg-navy px-5 py-2.5 text-[15px] font-semibold text-white transition-colors hover:bg-navy-700"
+            className="rounded-full bg-navy px-5 py-2.5 text-[16px] font-semibold text-white transition-colors hover:bg-navy-700"
           >
             Get started
           </a>

@@ -27,7 +27,7 @@ export default function Contact() {
           <div className="flex flex-col gap-5">
             <div className="rounded-2xl bg-navy p-7 text-white">
               <p className="eyebrow text-amber">Rather just talk?</p>
-              <p className="mt-3 text-[17px] leading-relaxed text-muted-navy">
+              <p className="mt-3 text-[18px] leading-relaxed text-muted-navy">
                 Call or text. A loan officer picks up.
               </p>
               <a
@@ -38,7 +38,7 @@ export default function Contact() {
               </a>
               <a
                 href={site.bookingUrl}
-                className="mt-6 inline-block rounded-full bg-amber px-6 py-3 text-[15.5px] font-semibold text-navy transition-opacity hover:opacity-90"
+                className="mt-6 inline-block rounded-full bg-amber px-6 py-3 text-[16px] font-semibold text-navy transition-opacity hover:opacity-90"
               >
                 Book 30 minutes
               </a>
@@ -46,7 +46,7 @@ export default function Contact() {
 
             <div className="rounded-2xl border border-warm-deep bg-white p-7">
               <h2 className="font-display text-lg font-bold text-navy">Other ways</h2>
-              <ul className="mt-4 flex flex-col gap-3 text-[15.5px]">
+              <ul className="mt-4 flex flex-col gap-3 text-[16px]">
                 <li>
                   <a href={`mailto:${site.email}`} className="text-navy underline decoration-amber underline-offset-4">
                     {site.email}
@@ -65,7 +65,7 @@ export default function Contact() {
               <h2 className="font-display text-lg font-bold text-navy">
                 Real estate agent?
               </h2>
-              <p className="mt-2.5 text-[15.5px] leading-relaxed text-muted">
+              <p className="mt-2.5 text-[16px] leading-relaxed text-muted">
                 There is a whole separate toolkit for you — co-branded flyers,
                 payment scenarios for your listings and marketing you can put
                 your name on.

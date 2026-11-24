@@ -66,7 +66,7 @@ export function ContactForm() {
       <h2 className="font-display text-2xl font-extrabold text-navy">
         Tell us about the house
       </h2>
-      <p className="mt-2 text-[15.5px] leading-relaxed text-muted">
+      <p className="mt-2 text-[16px] leading-relaxed text-muted">
         An address is ideal. A price and a zip code is plenty to start.
       </p>
 
@@ -102,7 +102,7 @@ export function ContactForm() {
         </label>
       </div>
 
-      <p className="mt-6 text-[12.5px] leading-relaxed text-muted">
+      <p className="mt-6 text-[12px] leading-relaxed text-muted">
         {CONTACT_CONSENT_TEXT}
       </p>
 
@@ -115,7 +115,7 @@ export function ContactForm() {
       </button>
 
       {state === "error" && (
-        <p className="mt-4 rounded-xl bg-warm p-4 text-[14.5px] leading-relaxed text-ink">
+        <p className="mt-4 rounded-xl bg-warm p-4 text-[14px] leading-relaxed text-ink">
           That didn&rsquo;t go through. Call or text{" "}
           <a href={`tel:${site.phoneHref}`} className="font-semibold text-navy underline decoration-amber underline-offset-4">
             {site.phone}

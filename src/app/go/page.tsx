@@ -105,7 +105,7 @@ export default function Go() {
             <br />
             Let&rsquo;s price <span className="highlight">yours.</span>
           </h1>
-          <p className="mx-auto mt-4 max-w-xs text-[15.5px] leading-relaxed text-muted-navy">
+          <p className="mx-auto mt-4 max-w-xs text-[16px] leading-relaxed text-muted-navy">
             Tell us the house and a loan officer sends back the real monthly
             number. No application, no credit pull.
           </p>
@@ -125,9 +125,9 @@ export default function Go() {
                   <Icon>{l.icon}</Icon>
                 </span>
                 <span className="min-w-0 flex-1">
-                  <span className="block text-[16.5px] font-semibold">{l.title}</span>
+                  <span className="block text-[16px] font-semibold">{l.title}</span>
                   <span
-                    className={`block text-[13.5px] ${
+                    className={`block text-[14px] ${
                       l.primary ? "text-navy/70" : "text-muted-navy"
                     }`}
                   >
@@ -160,20 +160,20 @@ export default function Go() {
         <div className="mt-8 text-center">
           <a
             href={site.social.instagram}
-            className="text-[14.5px] font-semibold text-white underline decoration-amber underline-offset-4"
+            className="text-[14px] font-semibold text-white underline decoration-amber underline-offset-4"
           >
             @whatsapayment
           </a>
           <span className="px-2 text-white/30">·</span>
           <Link
             href="/"
-            className="text-[14.5px] font-semibold text-white underline decoration-amber underline-offset-4"
+            className="text-[14px] font-semibold text-white underline decoration-amber underline-offset-4"
           >
             Full site
           </Link>
         </div>
 
-        <p className="mt-auto pt-10 text-center text-[11.5px] leading-relaxed text-muted-navy/80">
+        <p className="mt-auto pt-10 text-center text-[12px] leading-relaxed text-muted-navy/80">
           {LICENSEE_LINE}
         </p>
       </div>
