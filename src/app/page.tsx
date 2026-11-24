@@ -70,7 +70,7 @@ export default function Home() {
               href={site.bookingUrl}
               className="rounded-full border border-white/35 px-7 py-3.5 text-[16px] font-semibold text-white transition-colors hover:bg-white/10"
             >
-              Talk to a human
+              Talk to a loan officer
             </a>
           </div>
 
