@@ -80,11 +80,17 @@ export const MAIN: Program[] = [
 export const HARDER: { name: string; line: string }[] = [
   {
     name: "Doctor loans",
-    line: "Physicians, dentists and residents — student debt treated differently, and up to 100% financing.",
+    // "Student debt treated differently" was here. It is NOT on the Medical
+    // Professionals product sheet, and crushyourmarket.com deliberately left
+    // it out for that reason — an ordinary physician-loan feature that may
+    // well be true of this product, but is not confirmed against the
+    // guidelines. It does not get published under the licensee's NMLS here
+    // when it was withheld there.
+    line: "Physicians, dentists and residents — up to 100% financing, with no mortgage insurance.",
   },
   {
     name: "Down payment assistance",
-    line: "Thousands of California grants and deferred loans from cities, counties, the state and employers.",
+    line: "Hundreds of California grants and deferred loans from cities, counties, the state and employers.",
   },
   {
     name: "Self-employed FHA",
