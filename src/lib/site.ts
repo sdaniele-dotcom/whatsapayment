@@ -32,8 +32,20 @@ export const site = {
   caLicenseLine:
     "Real estate broker, California Department of Real Estate, License #02142680",
 
-  phone: "(562) 256-5779",
-  phoneHref: "+15622565779",
+  /**
+   * THE MAIN OFFICE LINE, which is what a site-wide number has to be.
+   *
+   * This was (562) 256-5779 — Shannon's DIRECT line — on the nav, the
+   * footer, the contact page, the calculator CTA and the link-in-bio page,
+   * under copy reading "talk to us", "someone will pick up" and "text a
+   * loan officer". A consumer brand's whole inbound volume was landing on
+   * one person's phone while the words around it promised a team.
+   *
+   * Shannon's direct line stays on her card on /about, which is the one
+   * place a named person's own number belongs.
+   */
+  phone: "(562) 317-6112",
+  phoneHref: "+15623176112",
   email: "info@crushmortgage.com",
   address: "3750 Schaufele Ave, Suite 270A, Long Beach, CA 90808",
 

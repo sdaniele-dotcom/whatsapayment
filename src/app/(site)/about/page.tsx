@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 /** Straight from the team data published on crushyourmarket.com. */
 const TEAM = [
-  { name: "Shannon Daniele", nmls: "2332050", phone: "(562) 256-5779", email: "sdaniele@crushmortgage.com", photo: "/team/shannon-daniele.jpg" },
+  { name: "Shannon Daniele", nmls: "2332050", phone: "(562) 256-5779" /* direct; site.phone is the office */, email: "sdaniele@crushmortgage.com", photo: "/team/shannon-daniele.jpg" },
   { name: "Josh Amescua", nmls: "1202316", phone: "(562) 688-3804", email: "jamescua@crushmortgage.com", photo: "/team/josh-amescua.jpg" },
   { name: "Amraj Kaur", nmls: "2787571", phone: "(562) 416-5366", email: "amraj@crushmortgage.com", photo: "/team/amraj-kaur.jpg" },
   { name: "Silvia Robles", nmls: "2323986", phone: "(562) 912-7769", email: "srobles@crushmortgage.com", photo: "/team/silvia-robles.jpg" },
