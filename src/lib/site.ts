@@ -6,11 +6,14 @@
  * terms appear. Every page footer, every flyer and every payment post carries
  * the licensee line below — the brand guide's rule, and the law's.
  *
- * The NMLS and DRE numbers here are taken from the What's a Payment brand
- * guide (v1, November 2026), which prints them on its own sample flyer.
- * Note that crushyourmarket.com's config currently records 169136 as the
- * company NMLS and 2332050 as an individual loan officer's — the two
- * disagree, and the brand guide is the newer of the two.
+ * The DRE number here is taken from the What's a Payment brand guide (v1,
+ * November 2026), which prints it on its own sample flyer.
+ *
+ * The company NMLS is 169136. The brand guide's sample flyer prints 2332050,
+ * which is Shannon Daniele's individual MLO number, not the company's —
+ * confirmed by Shannon. An individual's number published as the licensed
+ * entity's is a disclosure error, not a typo, so the brand guide is wrong
+ * here and this file does not follow it.
  */
 export const site = {
   brand: "What's a Payment",
@@ -24,7 +27,7 @@ export const site = {
 
   // ── The licensed entity ───────────────────────────────────────────
   licensee: "Crush Mortgage Corp",
-  companyNmls: "2332050",
+  companyNmls: "169136",
   dreLicense: "02142680",
   caLicenseLine:
     "Real estate broker, California Department of Real Estate, License #02142680",
